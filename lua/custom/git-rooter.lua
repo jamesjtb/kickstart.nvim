@@ -11,4 +11,4 @@ vim.api.nvim_create_user_command("CdGitRoot", function ()
     setCurrentDir()
 end, {})
 
-vim.keymap.set('n', '<leader>cg', '<cmd>CdGitRoot<CR>')
+vim.keymap.set('n', '<leader>gr', '<cmd>CdGitRoot<CR>', {desc="cd to [g]it project [r]oot"})
