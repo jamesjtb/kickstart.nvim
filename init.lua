@@ -168,6 +168,9 @@ vim.o.confirm = true
 
 -- tabs config
 vim.o.expandtab = true
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -1018,6 +1021,8 @@ require('lazy').setup({
     },
   },
 })
+
+require('custom.git-rooter')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
