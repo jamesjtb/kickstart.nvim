@@ -895,7 +895,8 @@ require('lazy').setup({
     priority = 1000, -- Make sure to load this before all the other start plugins.j
     config = function()
       require('onedark').setup {
-        style = 'darker'
+        style = 'darker',
+        transparent = true,
       }
       vim.cmd.colorscheme 'onedark'
     end,
