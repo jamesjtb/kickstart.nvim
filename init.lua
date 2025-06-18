@@ -171,6 +171,10 @@ vim.o.expandtab = true
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 
+-- UNGA BUNGA
+-- MOUSE BAD
+vim.o.mouse = ''
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -777,7 +781,8 @@ require('lazy').setup({
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        javascript = { 'prettierd', 'prettier', stop_after_first = true },
+        javascript = { 'prettierd', 'eslint_d', stop_after_first = true },
+        typescript = { 'eslint_d', 'prettierd' },
       },
     },
   },
