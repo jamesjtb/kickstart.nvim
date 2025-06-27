@@ -30,63 +30,63 @@ return {
   end,
   keys = {
     {
-      '<leader>hf',
+      '<leader>af',
       function()
         harpoon:list():add()
       end,
       desc = 'harpoon file',
     },
     {
-      '<leader>ha',
+      '<leader>aa',
       function()
         harpoon.ui:toggle_quick_menu(harpoon:list())
       end,
       desc = 'harpoon quick menu',
     },
     {
-      '<leader>h1',
+      '<leader>a1',
       function()
         harpoon:list():select(1)
       end,
       desc = 'select harpoon 1',
     },
     {
-      '<leader>h2',
+      '<leader>a2',
       function()
         harpoon:list():select(2)
       end,
       desc = 'select harpoon 2',
     },
     {
-      '<leader>h3',
+      '<leader>a3',
       function()
         harpoon:list():select(3)
       end,
       desc = 'select harpoon 3',
     },
     {
-      '<leader>h4',
+      '<leader>a4',
       function()
         harpoon:list():select(4)
       end,
       desc = 'select harpoon 4',
     },
     {
-      '<leader>hp',
+      '<leader>ap',
       function()
         harpoon:list():prev()
       end,
       desc = 'previous harpoon',
     },
     {
-      '<leader>hn',
+      '<leader>an',
       function()
         harpoon:list():next()
       end,
       desc = 'next harpoon',
     },
     {
-      '<leader>ho',
+      '<leader>ao',
       function()
         toggle_telescope(harpoon:list())
       end,
