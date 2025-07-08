@@ -6,6 +6,6 @@ return {
   dependencies = { { 'echasnovski/mini.icons', opts = {} } },
   lazy = false,
   keys = {
-    { '<leader>od', '<cmd>Oil<cr>', desc = '[O]pen Parent [D]irectory' },
+    { '<leader>-', '<cmd>Oil<cr>', desc = 'Open Parent Directory' },
   },
 }
