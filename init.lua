@@ -171,6 +171,10 @@ vim.o.expandtab = true
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 
+-- auto indenting
+vim.o.autoindent = true
+vim.o.smartindent = true
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
