@@ -5,12 +5,18 @@ vim.keymap.set('n', '<leader>ln', '<cmd>TSToolsRenameFile<cr>', { desc = '[L]SP 
 vim.keymap.set('n', '<leader>lr', '<cmd>TSToolsFileReferences<cr>', { desc = '[L]SP - Find file [r]eferences' })
 
 return {
-  'pmizio/typescript-tools.nvim',
-  dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
-  config = {
-    root_dir = function(f)
-      local util = require 'lspconfig.util'
-      return util.root_pattern 'tsconfig.json'(f)
-    end,
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    config = {
+      root_dir = function(f)
+        local util = require 'lspconfig.util'
+        return util.root_pattern 'tsconfig.json'(f)
+      end,
+    },
+  },
+  {
+    'dmmulroy/ts-error-translator.nvim',
+    opts = {},
   },
 }

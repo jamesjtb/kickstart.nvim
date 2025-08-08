@@ -164,7 +164,7 @@ vim.o.scrolloff = 10
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
 -- See `:help 'confirm'`
-vim.o.confirm = true
+-- vim.o.confirm = true
 
 -- tabs config
 vim.o.expandtab = true
@@ -173,7 +173,10 @@ vim.o.tabstop = 4
 
 -- auto indenting
 vim.o.autoindent = true
-vim.o.smartindent = true
+-- vim.o.smartindent = true
+
+-- line wrapping
+vim.o.wrap = false
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -184,6 +187,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+vim.keymap.set('n', '<space>td', vim.diagnostic.open_float, { noremap = true, silent = true, desc = 'Show diagnostics in float' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
