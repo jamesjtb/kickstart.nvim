@@ -178,6 +178,7 @@ vim.o.autoindent = true
 -- line wrapping
 vim.o.wrap = false
 
+vim.o.conceallevel = 1
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
